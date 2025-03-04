@@ -1,0 +1,76 @@
+.adminPanel > .construct > .leftPanel {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    pointer-events: auto; /* Разрешаем события мыши для этого элемента */
+}
+
+.adminPanel > .construct > .leftPanel > * {
+    pointer-events: none; /* Запрещаем события мыши для дочерних элементов */
+}
+
+.adminPanel > .construct > .leftPanel > .panel {
+    margin-left: -45px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #0f0f0f;
+    margin-top: 22vh;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    pointer-events: all;
+    user-select: none; /* Запрет выделения текста и изображений */
+    cursor: grab; /* Курсор при перемещении */
+}
+
+.adminPanel > .construct > .leftPanel > .panel.active {
+    transform: translateX(55px);
+}
+
+.adminPanel > .construct > .leftPanel > .panel > .item {
+    margin: 8px 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+.adminPanel > .construct > .leftPanel > .panel > .item:hover {
+    height: 40px;
+    width: 40px;
+}
+
+.adminPanel > .construct > .leftPanel > .panel > .item > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    pointer-events: none; /* Запрет взаимодействия с изображениями */
+}
+
+.adminPanel > .construct > .leftPanel > .panel > .item > .icon {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Запрет взаимодействия с изображениями */
+    color: white;
+}
+
+.adminPanel > .construct > .leftPanel > .panel > .arrow {
+    transform: rotate(180deg);
+    position: absolute;
+    height: 35px;
+    margin-top: 101px;
+    margin-left: 73px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}   
+
+.adminPanel > .construct > .leftPanel > .panel.active > .arrow {
+    transform: rotate(0deg); /* Поворачиваем стрелочку при открытии панели */
+}

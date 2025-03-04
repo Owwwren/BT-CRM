@@ -1,0 +1,281 @@
+/* Основной контейнер */
+.ordersPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Навигационная панель */
+.ordersPage > .navigatePanel {
+    border-radius: 7px;
+    width: 100%;
+    height: 40px;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;    
+    box-shadow: 0px 0px 7px 3px #191919;
+}
+
+.ordersPage > .navigatePanel > p {
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.ordersPage > .navigatePanel > .separator {
+    color: #636363;
+    margin-right: 10px;
+}
+
+.ordersPage > .navigatePanel > .text:hover {
+    color: rgb(198, 198, 198);
+    cursor: pointer;
+}
+
+/* Контентная страница */
+.ordersPage > .contentPage {
+    padding: 20px 20px 0px 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: #2d2d2d;
+    box-shadow: 0px 0px 24px #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Заголовок и кнопки */
+.ordersPage > .contentPage > .titleAndButton {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ordersPage > .contentPage > .titleAndButton > h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.ordersPage > .contentPage > .titleAndButton > .buttonBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.ordersPage > .contentPage > .titleAndButton > .buttonBox > .iconButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #434343;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.ordersPage > .contentPage > .titleAndButton > .buttonBox > .iconButton:hover {
+    background-color: #3a3a3a;
+}
+
+.ordersPage > .contentPage > .titleAndButton > .buttonBox > .buttonClear,
+.ordersPage > .contentPage > .titleAndButton > .buttonBox > .buttonOK {    
+    background-color: #0f0f0f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.ordersPage > .contentPage > .titleAndButton > .buttonBox > .buttonClear:hover,
+.ordersPage > .contentPage > .titleAndButton > .buttonBox > .buttonOK:hover {
+    background-color: #3a3a3a;
+}
+
+/* Контейнер формы */
+.ordersPage > .contentPage > .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Строки с полями ввода */
+.ordersPage > .contentPage > .formContainer > form > .inputRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .inputBox > label > .infoIcon,
+.ordersPage > .contentPage > .formContainer > form > .inputBox > label > .infoIcon {
+    position: absolute;
+    height: 12px;
+    color: #5b5b5b
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .inputBox > label > .infoIcon:hover,
+.ordersPage > .contentPage > .formContainer > form > .inputBox > label > .infoIcon:hover {
+    color: #242424
+}
+
+/* Поля ввода (половина ширины) */
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .inputBox.halfWidth {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 50%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .SwitchContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > span {
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > .switch {
+    border-radius: 10px;
+    background: #191919;
+    box-shadow: inset 0px 0px 5px 0px black;
+    height: 35px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > .switch.active {
+    background: #2d7334;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > .switch > .circle {
+    background: #2d2d2d;
+    height: 28px;
+    width: 20px;
+    border-radius: 8px;
+    margin-left: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > .switch > .circle.active {
+    margin-left: 75px;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > .typeDevice {
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    padding: 6px;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > .typeDevice.active {
+    background-color: #2d7334;
+    box-shadow: inset 0px 0px 5px 1px #000000;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > div > .typeDevice:hover {
+    background-color: #172920;
+    box-shadow: inset 0px 0px 5px 1px #000000;
+}
+/* Поле "Описание" (полная ширина) */
+.ordersPage > .contentPage > .formContainer > form > .inputBox.fullWidth {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputBox.fullWidth > textarea {
+    margin-top: 15px;
+    color: white;
+    outline: 0;
+    border-radius: 5px;
+    height: 180px;
+    width: 100%;
+    background-color: #191919;
+    border: 1px solid #686868;
+    padding: 5px 10px;
+}
+
+/* Лейблы и иконки */
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .inputBox > label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Поля ввода */
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .inputBox > input {
+    color: white;
+    outline: 0;
+    border-radius: 5px;
+    height: 35px;
+    width: 75%;
+    background-color: #191919;
+    border: 1px solid #686868;
+    padding: 5px 10px;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .inputBox > input:hover {
+    border-color: #3e3e3e;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .inputBox > input:focus {
+    box-shadow: 0px 0px 2px 4px #0f0f0f;
+}
+
+/* Кнопки справа от полей */
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .sideButton {
+    background-color: #434343;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.ordersPage > .contentPage > .formContainer > form > .inputRow > .sideButton:hover {
+    background-color: #3a3a3a;
+}
+
+/* Иконки подсказок */
+.ordersPage > .contentPage > .formContainer > form > .inputBox > .infoIcon {
+    color: #636363;
+    cursor: pointer;
+}

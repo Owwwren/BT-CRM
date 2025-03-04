@@ -1,0 +1,48 @@
+.autorization > .construct > .header > .headerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.autorization > .construct > .header > .headerBox > .title {
+    font-weight: 100;
+    font-size: 20px;
+    color: #c5c5c5;
+    padding: 5px 0px;
+}   
+
+.autorization > .construct > .header > .headerBox > .buttonBox {
+    margin-top: 20px;
+}
+
+.autorization > .construct > .header > .headerBox > .buttonBox > .button {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границу */
+    color: #ffffff; /* Белый текст */
+    font-size: 16px; /* Размер текста */
+    padding: 0 30px; /* Убираем отступы */
+    position: relative; /* Для псевдоэлемента */
+    display: inline-block; /* Чтобы подчеркивание было на всю ширину */
+}
+
+/* Псевдоэлемент для подчеркивания */
+.autorization > .construct > .header > .headerBox > .buttonBox > .button::after {
+    content: '';
+    display: block;
+    width: 100%; /* Подчеркивание на всю ширину кнопки */
+    height: 2px; /* Толщина подчеркивания (измени по необходимости) */
+    background-color: #999999; /* Серый цвет подчеркивания */
+    position: absolute;
+    bottom: -5px; /* Отступ от текста (измени по необходимости) */
+    left: 0;
+}
+
+.autorization > .construct > .header > .headerBox > .buttonBox > .button:hover::after {
+    background-color: #cccccc; /* Светлее при наведении */
+}
+
+.autorization > .construct > .header > .headerBox > .buttonBox > .button:active::after {
+    background-color: #666666; /* Темнее при нажатии */
+}
+
+

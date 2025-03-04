@@ -1,0 +1,7 @@
+.adminPanel {
+    background: linear-gradient(to bottom, #0f0f0f 20%, #202020 0%);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}

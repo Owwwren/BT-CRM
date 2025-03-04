@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+body {
+    background-color:  black;
+    background-image: url('./assets/BGimg.png');
+    background-repeat: no-repeat; 
+    /* font-family: "JetBrains Mono", serif; */
+    font-family: "Marmelad", serif;
+    font-optical-sizing: auto;
+}
+
+/* Настройки для мобильных пк */
+body {
+    background-size: auto 100%; 
+    background-position: right; 
+}
+
+/* Настройки для мобильных устройств */
+@media (max-width: 768px) { 
+    body {
+        background-size: cover; 
+        background-position: 65% center; 
+    }
+}
+
+
+.footerLicense {
+    font-weight: 100;
+    font-size: 13px;
+    color: #c5c5c5;
+    padding: 5px 0px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

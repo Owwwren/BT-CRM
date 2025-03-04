@@ -1,0 +1,33 @@
+.adminPanel > .construct > .rightPanel {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.adminPanel > .construct > .rightPanel > .button {
+    all: unset;
+    padding: 5px 6px;
+    border-radius: 50px 0px 0 50px;
+    background-color: #0f0f0f;
+    margin-top: 34vh;
+    width: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.4s ease-in-out;
+}
+
+.adminPanel > .construct > .rightPanel > .button:hover { 
+    width: 40px;
+}
+
+.adminPanel > .construct > .rightPanel > .button > .icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+}

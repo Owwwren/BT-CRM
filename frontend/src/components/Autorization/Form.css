@@ -1,0 +1,163 @@
+.autorization > .construct > .footer > .form {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.autorization > .construct > .footer >.form > .loginInput {
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 1000;
+    font-size: 12px;
+    width: 100%;
+    border: 2px;
+    background-color: #373737;
+    padding: 9px 5px;
+    z-index: 1;
+}
+
+.autorization > .construct > .footer >.form > .loginInput::placeholder {
+    color: #a9a9a9;
+    font-weight: 1000;
+    font-size: 12px;
+}
+
+.autorization > .construct > .footer >.form > .passwordInput {
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 1000;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 25px;
+    border: 2px;
+    background-color: #373737;
+    padding: 9px 5px;
+    z-index: 1;
+}
+
+.autorization > .construct > .footer >.form > .passwordInput::placeholder {
+    color: #a9a9a9;
+    font-weight: 1000;
+    font-size: 12px;
+}
+
+.autorization > .construct > .footer > .form > .checkbox {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .checkboxContainer {
+    display: flex;
+    align-items: center;
+}
+ 
+.autorization > .construct > .footer > .form > .checkbox > .checkboxContainer > .button {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #373737; /* Цвет до взаимодействия */
+    background-color: #373737;
+    border-radius: 3px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .checkboxContainer .button:hover {
+    border-color: #1f1f1f; /* Цвет при наведении */
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .checkboxContainer .button:active {
+    border-color: #141414; /* Цвет при нажатии */
+    background-color: #141414;
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .checkboxContainer .button:checked {
+    background-color: #08940f; /* Цвет при выборе */
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .checkboxContainer .text {
+    margin-left: 7px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400; 
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .link {
+    margin-left: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .link:hover {
+    color: #cccccc; 
+}
+
+.autorization > .construct > .footer > .form > .checkbox > .link:active {
+    color: #999999; 
+}
+
+
+.autorization > .construct > .footer > .form > .button {
+    width: 45%;
+    margin-top: 15px;
+    background-color: #373737;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.autorization > .construct > .footer > .form > .button:hover {
+    background-color: #1f1f1f; 
+}
+
+.autorization > .construct > .footer > .form > .button:active {
+    background-color: #141414; 
+}
+
+.autorization > .construct > .footer > .form > .loginErrorMessage {  
+    font-size: 13px;
+    z-index: 0;
+    transform: translatey(0px);
+    position: absolute;
+    color: #950000;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.autorization > .construct > .footer > .form > .loginErrorMessage.active {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+
+.autorization > .construct > .footer > .form > .passwordErrorMessage {  
+    font-size: 13px;
+    z-index: 0;
+    transform: translatey(0px);
+    position: absolute;
+    color: #950000;
+    transform: translateY(60px);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.autorization > .construct > .footer > .form > .passwordErrorMessage.active {
+    opacity: 1;
+    transform: translateY(40px);
+}
+
