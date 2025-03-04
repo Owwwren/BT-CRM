@@ -75,10 +75,13 @@ cat << 'EOF' > README.md
    ```
 
 3. Настрой базу данных:
-   - Создай базу данных в PostgreSQL.
+   - Создай базу данных в MySQL.
    - Обнови настройки в файле .env:
    ```bash
-   DATABASE_URL=postgres://user:password@localhost:5432/bt_crm
+   
+DB_LOGIN = user
+DB_PASSWORD = password
+DB_NAME = name
    ```
 4. Примени миграции:
    ```bash
@@ -93,10 +96,17 @@ cat << 'EOF' > README.md
 
 6. Запусти сервер разработки:
    - Бэкенд:
-   ```bash
-   cd ../backend
-   python manage.py runserver
-   ```
+      1. На пк:
+         разкоментируйте if name = main и все что ниже 
+         ```bash
+         cd ../backend
+         python API.py
+         ```
+      2. На сервере:
+         Используйте pm2 для запуска
+         ```bash
+         cd ../backend
+         pm2 start 
    - Фронтенд:
    ```bash
    cd ../frontend
