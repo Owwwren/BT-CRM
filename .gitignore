@@ -1,0 +1,6 @@
+# Игнорировать папки с зависимостями
+backend/venv/
+frontend/node_modules/
+
+# Игнорировать файлы .env
+*.env
