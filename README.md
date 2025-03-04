@@ -49,10 +49,97 @@ cat << 'EOF' > README.md
    pip install -r requirements.txt
    ```
 
+3. Настрой базу данных:
+   - Создай базу данных в PostgreSQL.
+   - Обнови настройки в файле .env:
+   ```bash
+   DATABASE_URL=postgres://user:password@localhost:5432/bt_crm
+   ```
+4. Примени миграции:
+   ```bash
+   python manage.py migrate
+   ```
 
+5. Установи зависимости для фронтенда:
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
+6. Запусти сервер разработки:
+   - Бэкенд:
+   ```bash
+   cd ../backend
+   python manage.py runserver
+   ```
+   - Фронтенд:
+   ```bash
+   cd ../frontend
+   npm start
+   ```
 
+## Использование
+1. Открой приложение в браузере: http://localhost:3000.
 
+2. Войди в систему.
+
+4. Используй интерфейс для управления клиентами, сделками и задачами.
+
+## Технологии
+
+Бэкенд
+   - Python (FastApi, aiomysql, pydantic)
+
+   - MySQL (база данных)
+
+   - Redis (кэширование будет добавлено позже)
+   
+   - Celery (асинхронные задачи)
+
+Фронтенд
+   - React.js
+   
+   - Redux (управление состоянием)
+   
+   - Axios (HTTP-запросы)
+   
+   - Material-UI (стилизация)
+
+## Лицензия
+
+Этот проект распространяется под лицензией MIT. Подробнее см. в файле Файла нет : )
+
+## Контрибуция
+
+Если ты хочешь внести вклад в проект, следуй этим шагам:
+
+1. Форкни репозиторий.
+
+2. Создай новую ветку:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Сделай изменения и закоммить их:
+   ```bash
+   git commit -m "Добавлен новый функционал: your-feature-name"
+   ```
+
+4. Отправь изменения в свой форк:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Создай Pull Request в основной репозиторий.
+
+## Контакты
+
+Если у тебя есть вопросы или предложения, свяжись со мной:
+
+Email: owwwren@gmail.com
+
+Telegram: @owwwren
+EOF
 
 
 
