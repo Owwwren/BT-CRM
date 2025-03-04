@@ -40,3 +40,100 @@
    ```bash
    git clone https://github.com/Owwwren/BT-CRM.git
    cd BT-CRM
+Установи зависимости для бэкенда:
+
+bash
+Copy
+cd backend
+pip install -r requirements.txt
+Настрой базу данных:
+
+Создай базу данных в PostgreSQL.
+
+Обнови настройки в файле .env:
+
+env
+Copy
+DATABASE_URL=postgres://user:password@localhost:5432/bt_crm
+Примени миграции:
+
+bash
+Copy
+python manage.py migrate
+Установи зависимости для фронтенда:
+
+bash
+Copy
+cd ../frontend
+npm install
+Запусти сервер разработки:
+
+Бэкенд:
+
+bash
+Copy
+cd ../backend
+python manage.py runserver
+Фронтенд:
+
+bash
+Copy
+cd ../frontend
+npm start
+Использование
+Открой приложение в браузере: http://localhost:3000.
+
+Зарегистрируйся или войди в систему.
+
+Используй интерфейс для управления клиентами, сделками и задачами.
+
+Технологии
+Бэкенд
+Python (Django, Django REST Framework)
+
+PostgreSQL (база данных)
+
+Redis (кэширование)
+
+Celery (асинхронные задачи)
+
+Фронтенд
+React.js
+
+Redux (управление состоянием)
+
+Axios (HTTP-запросы)
+
+Material-UI (стилизация)
+
+Лицензия
+Этот проект распространяется под лицензией MIT. Подробнее см. в файле LICENSE.
+
+Контрибуция
+Если ты хочешь внести вклад в проект, следуй этим шагам:
+
+Форкни репозиторий.
+
+Создай новую ветку:
+
+bash
+Copy
+git checkout -b feature/your-feature-name
+Сделай изменения и закоммить их:
+
+bash
+Copy
+git commit -m "Добавлен новый функционал: your-feature-name"
+Отправь изменения в свой форк:
+
+bash
+Copy
+git push origin feature/your-feature-name
+Создай Pull Request в основной репозиторий.
+
+Контакты
+Если у тебя есть вопросы или предложения, свяжись со мной:
+
+Email: your.email@example.com
+
+Telegram: @your_telegram
